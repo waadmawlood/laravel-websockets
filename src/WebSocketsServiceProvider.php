@@ -43,10 +43,7 @@ class WebSocketsServiceProvider extends ServiceProvider
             __DIR__.'/../config/websockets.php', 'websockets'
         );
 
-        $this->publishes([
-            __DIR__.'/../database/migrations/0000_00_00_000000_create_websockets_statistics_entries_table.php' => database_path('migrations/0000_00_00_000000_create_websockets_statistics_entries_table.php'),
-            __DIR__.'/../database/migrations/0000_00_00_000000_rename_statistics_counters.php' => database_path('migrations/0000_00_00_000000_rename_statistics_counters.php'),
-        ], 'migrations');
+        $this->loadMigrationsFrom( __DIR__ . '/../database/migrations' );
 
         $this->registerEventLoop();
 
