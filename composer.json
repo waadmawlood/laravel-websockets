@@ -44,6 +44,7 @@
         "illuminate/routing": "^9.0|^10.0",
         "illuminate/support": "^9.0|^10.0",
         "pusher/pusher-php-server": "^6.0|^7.0",
+        "react/async":"^4",
         "react/mysql": "^0.5",
         "react/promise": "^2.8",
         "symfony/http-kernel": "^5.0|^6.0",
