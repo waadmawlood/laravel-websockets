@@ -3,7 +3,7 @@
 namespace BeyondCode\LaravelWebSockets\Rules;
 
 use BeyondCode\LaravelWebSockets\Contracts\AppManager;
-use function Clue\React\Block\await;
+use function React\Async\await;
 use Illuminate\Contracts\Validation\Rule;
 use React\EventLoop\Factory;
 
