@@ -3,7 +3,7 @@
 namespace BeyondCode\LaravelWebSockets\Dashboard\Http\Controllers;
 
 use BeyondCode\LaravelWebSockets\Contracts\AppManager;
-use function Clue\React\Block\await;
+use function React\Async\await;
 use Illuminate\Http\Request;
 use React\EventLoop\LoopInterface;
 
